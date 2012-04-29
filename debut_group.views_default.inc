@@ -97,7 +97,7 @@ function debut_group_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page_1');
-  $handler->display->display_options['path'] = 'group';
+  $handler->display->display_options['path'] = 'groups';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Groups';
   $handler->display->display_options['menu']['weight'] = '0';
@@ -109,7 +109,7 @@ function debut_group_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['style_plugin'] = 'rss';
   $handler->display->display_options['row_plugin'] = 'node_rss';
-  $handler->display->display_options['path'] = 'group/feed';
+  $handler->display->display_options['path'] = 'groups/feed';
   $handler->display->display_options['displays'] = array(
     'page_1' => 'page_1',
     'default' => 0,
